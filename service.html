@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>Dr.M.R.Sanjeevi</title>
+
+    <!--====== Favicon Icon ======-->
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai:600&display=swap" rel="stylesheet">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--====== Aos css ======-->
+    <link rel="stylesheet" href="assets/css/aos.css">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="assets/css/slick.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="assets/css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+<style> 
+  @font-face {
+     font-family: No;
+     src: url(No.otf);
+  }
+ 
+  #text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 26px;
+  
+  font-weight: 400;
+  line-height: 30px;
+  color: #646464;
+    font-weight: bold;
+  }
+
+
+  .btn-1 {
+  background-color: #F27935;
+}
+.btn-1 .round {
+  background-color: #f59965;
+}
+
+
+.type-1>a {
+  text-decoration: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 12px 53px 12px 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+}
+ span {
+  position: relative;
+  z-index: 3;
+}
+a .round {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+a .round i {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.txt {
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.type-1 a:hover {
+  padding-left: 48px;
+  padding-right: 28px;
+}
+.type-1 a:hover .round {
+  width: calc(100% - 6px);
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.type-1 a:hover .round i {
+  left: 12%;
+}
+
+
+
+
+
+
+
+
+  #f1_container {
+  position: relative;
+  margin: 10px auto;
+  width: 450px;
+  height: 281px;
+  z-index: 1;
+}
+#f1_container {
+  perspective: 1000;
+}
+#f1_card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+#f1_container:hover #f1_card {
+  transform: rotateY(180deg);
+  box-shadow: -5px 5px 5px rgb(255, 255, 255);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  
+  color: green;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+ .type-1>a {
+  text-decoration: none;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  padding: 12px 53px 12px 23px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: oswald;
+  font-weight: bold;
+  position: relative;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+}
+ span {
+  position: relative;
+  z-index: 3;
+}
+a .round {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  z-index: 2;
+}
+a .round i {
+  position: absolute;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -4px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.txt {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.type-1 a:hover {
+  padding-left: 48px;
+  padding-right: 28px;
+}
+.type-1 a:hover .round {
+  width: calc(100% - 6px);
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+}
+.type-1 a:hover .round i {
+  left: 12%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+
+    <header id="home" class="header-area pt-100">
+
+
+
+        <div class="navigation-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="#">
+                         <span style="color:#EB3656;font-weight:bold">DR.M.R.SANJEEVI</span>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul id="nav" class="navbar-nav ml-auto">
+                                            <li class="nav-item active">
+                                                <a class="page-scroll" href="index.html">Home</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="page-scroll" href="about.html">About</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="page-scroll" href="service.html">Services</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="page-scroll" href="Gallery.html">Gallery</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="page-scroll" href="https://www.facebook.com/pages/category/Product-Service/HRO-International-1904856839773406/">HRO</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="page-scroll" href="contact.html">Contact</a>
+                                            </li>
+                                        </ul> <!-- navbar nav -->
+                            </div>
+                            <div class="navbar-btn ml-20 d-none d-sm-block">
+                                <a class="main-btn" href="#"><i class="lni-phone"></i>9840072007</a>
+                            </div>
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation bar -->
+     
+
+
+        <br> <br>
+
+
+        <center>   <img src="assets/images/about/hro.jpg" alt="About" style="width:300px;">   </center> <br>
+
+        <div class="container"> <center>
+                <p style="font-size: 28px;color:#EB3656;text-align: center;font-weight: bold;">OUR SERVICES</p> <br> <br>
+                <div id="text"></div><div id="cursor"></div>
+              </center><br>
+
+
+              <br> <br><br> <br><br> <br>
+
+
+
+
+        <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+
+
+        
+        
+  <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Right to Education</span></h4></center><br><br>
+  <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+        <img src="images/27.gif">
+      </div>
+   
+      <div class="back face center">
+        <center><h4 class="section-title"><span style="font-size:22px;">Right to Education</span></h4></center><br>
+        <p style="text-align:justify"> Education is not a privilege. ... Education as a human right means: the right to education is legally guaranteed for all without any discrimination. states have the obligation to protect, respect, and fulfil the right to education.</p>
+        <center>
+            <div class="type-1">
+      
+                
+            </div>
+            </center>
+    </div>
+    </div>
+    </div>
+    <br></div>       
+    <div class="col-sm-6">
+    <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Right to Own Property</span></h4></center><br><br>
+  <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+        <img src="images/29.gif">
+      </div>
+   
+      <div class="back face center">
+        <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Right to Own Property</span></h4></center><br>
+        <p style="text-align:justify"> Prosperity and property rights are inextricably linked. The importance of having well-defined and strongly protected property rights is now widely recognized among economists and policymakers. </p> <center>
+            <div class="type-1">
+              
+                
+            </div>
+            </center>
+    </div>
+    </div>
+    </div>
+    <br>       </div>
+    <div class="col-sm-6">
+
+
+
+    <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Right to Equality</span></h4></center><br><br>
+  <div id="f1_container">
+    <div id="f1_card" class="shadow">
+      <div class="front face">
+        <img src="images/22.gif">
+      </div>
+   
+      <div class="back face center">
+        <center><h4 class="section-title"><span style="font-size:20px;">Right to Equality</span></h4></center><br>
+        <p style="text-align:justify">  Right to equality includes equality before law, prohibition of discrimination on grounds of race, religion, gender, and caste or birth place. ... Every citizen, from Prime Minister to an ordinary individual, is subjected to the same laws.     </p> <center>
+            <div class="type-1">
+             
+                
+            </div>
+            </center>
+    </div>
+    </div>
+    </div>
+    <br>
+
+</div>
+
+
+
+
+    <div class="col-sm-6">
+
+
+      <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Freedom from Slavery</span></h4></center><br><br>
+      <div id="f1_container">
+        <div id="f1_card" class="shadow">
+          <div class="front face">
+            <img src="images/21.gif">
+          </div>
+       
+          <div class="back face center">
+            <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Freedom from Slavery</span></h4></center><br>
+            <p style="text-align:justify"> What is the right to freedom from slavery and forced labour? <br>The right to freedom from slavery prohibits people being held in conditions in which the powers attaching to the right of ownership are exercised.We fight to provide freedom for slaveries.</p>      <center>
+                <div class="type-1">
+                  
+                  
+                    
+                </div>
+                </center>
+        </div>
+        </div>
+        </div>
+        <br>
+    </div>
+
+        <div class="col-sm-6">
+
+        <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Freedom of Opinion and Information</span></h4></center><br><br>
+        <div id="f1_container">
+          <div id="f1_card" class="shadow">
+            <div class="front face">
+              <img src="images/28.gif">
+            </div>
+         
+            <div class="back face center">
+              <center><h4 class="section-title"><span style="font-size:22px;">Freedom of Opinion and Information</span></h4></center><br>
+              <p style="text-align:justify">What things come under freedom of expression?<br>
+                  Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers. </p>            <center>
+                  <div class="type-1">
+                    
+                  
+                      
+                  </div>
+                  </center>
+          </div>
+          </div>
+          </div>
+          <br>
+        </div>
+
+
+          <div class="col-sm-6">
+
+          <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Substance Abuse Social Worker</span></h4></center><br><br>
+          <div id="f1_container">
+            <div id="f1_card" class="shadow">
+              <div class="front face">
+                <img src="images/24.gif">
+              </div>
+           
+              <div class="back face center">
+                <center><h4 class="section-title"><span style="font-size:22px;">Substance abuse social worker</span></h4></center><br>
+                <p style="text-align:justify"> Social workers uncover hidden problems and implement solutions. Integrated treatment models are important because services have often been denied to people who needed them because they had a concurrent diagnosis that the facility did not feel equipped to handle.</p>        <center>
+                    <div class="type-1">
+                      
+                       
+                        
+                    </div>
+                    </center>
+            </div>
+            </div>
+            </div>
+            <br>
+
+        </div>
+
+
+            <div class="col-sm-6">
+
+            <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Health and Sanitation</span></h4></center><br><br>
+            <div id="f1_container">
+              <div id="f1_card" class="shadow">
+                <div class="front face">
+                  <img src="images/26.gif">
+                </div>
+             
+                <div class="back face center">
+                    <center><h4 class="section-title"><span style="font-size:22px;">Health and Sanitation</span></h4></center><br>
+                   <p style="text-align:justify"> 
+                    What is importance of sanitation?<br>
+                    Improved sanitation also helps the environment. Clean drinking water and good sanitation would not prevent infections without practicing good hygiene.</p>                  <center>
+                      <div class="type-1">
+                        
+                         
+                          
+                      </div>
+                      </center>
+              </div>
+              </div>
+              </div>
+              <br>
+            </div>
+
+
+
+
+              <div class="col-sm-6">
+
+
+
+              <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Development of Women and Children</span></h4></center><br><br>
+              <div id="f1_container">
+                <div id="f1_card" class="shadow">
+                  <div class="front face">
+                    <img src="images/23.gif">
+                  </div>
+               
+                  <div class="back face center">
+                    <center><h4 class="section-title"><span style="font-size:22px;">Development of Women and Children</span></h4></center><br>
+                    <p style="text-align:justify">What do you mean by women welfare?<br>
+                      The welfare of women by giving special attention to the prevention, eradication in any form, as well as the promotion of skills of employment and self – actualization.</p>         <center>
+                        <div class="type-1">
+                          
+                           
+                            
+                        </div>
+                        </center>
+                </div>
+                </div>
+                </div>
+                <br>
+
+            </div>
+
+
+
+
+            <div class="col-sm-6">
+
+
+
+                    <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Right to Equality</span></h4></center><br><br>
+                  <div id="f1_container">
+                    <div id="f1_card" class="shadow">
+                      <div class="front face">
+                        <img src="images/22.gif">
+                      </div>
+                   
+                      <div class="back face center">
+                        <center><h4 class="section-title"><span style="font-size:20px;">Right to Equality</span></h4></center><br>
+                        <p style="text-align:justify">  Right to equality includes equality before law, prohibition of discrimination on grounds of race, religion, gender, and caste or birth place. ... Every citizen, from Prime Minister to an ordinary individual, is subjected to the same laws.     </p> <center>
+                            <div class="type-1">
+                             
+                                
+                            </div>
+                            </center>
+                    </div>
+                    </div>
+                    </div>
+                    <br>
+                
+                </div>
+                
+             
+
+                <div class="col-sm-6">
+
+
+
+
+
+                  <center><h4 class="section-title"><span style="font-size:22px;color:#EB3656">Empowerment Slum dwellers</span></h4></center><br><br>
+                  <div id="f1_container">
+                    <div id="f1_card" class="shadow">
+                      <div class="front face">
+                        <img src="images/25.gif">
+                      </div>
+                   
+                      <div class="back face center">
+                        <center><h4 class="section-title"><span style="font-size:22px;">Empowerment Slum dwellers</span></h4></center><br>
+                        <p style="text-align:justify">Will you stand with us today to change our life.<br>
+                          HRO works to motivate and empower people, giving them the confidence and ability to work together and influence their fellow slum residents, council officials, police, school authorities and others. </p>          <center>
+                            <div class="type-1">
+                              
+                              
+                                
+                            </div>
+                            </center>
+                    </div>
+                    </div>
+                    </div>       </div>       </div>       </div>
+                    <br>
+
+
+                    <br>  <br>
+                    <br>
+                  <div class="container">
+                    <div class="center"> <div class="box">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4052272783592!2d80.20071031408492!3d13.073484990789108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526779b45c4fdf%3A0xfa6acc0fb7e61023!2sHRO%20International%20Head%20office!5e0!3m2!1sen!2sin!4v1572432142436!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0; border-radius:10px;" allowfullscreen=""></iframe>
+                  </div>
+                    </div>
+                  </div>
+                  
+                  
+                      <!--====== FOOTER PART START ======-->
+                  
+                      <footer id="footer" class="footer-area" >
+                          <div class="footer-widget pt-80 pb-130">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-lg-3 col-md-4 col-sm-8">
+                                          <div class="footer-logo mt-50">
+                                              <div class="info-content"><div class="f-title">
+                                                  <h4 class="title">Contact US</h4></div>
+                                              </div>
+                                              <ul class="footer-info">
+                                                  <li>
+                                                      <div class="single-info">
+                                                          <div class="info-icon">
+                                                              <i class="lni-phone-handset"></i>
+                                                          </div>
+                                                          <div class="info-content">
+                                                              <p>+91 980072007</p>
+                                                          </div>
+                                                      </div> <!-- single info -->
+                                                  </li>
+                                                  <li>
+                                                      <div class="single-info">
+                                                          <div class="info-icon">
+                                                              <i class="lni-envelope"></i>
+                                                          </div>
+                                                          <div class="info-content">
+                                                              <p>sanjudetective@gmail.com</p>
+                                                          </div>
+                                                      </div> <!-- single info -->
+                                                  </li>
+                                                  <li>
+                                                      <div class="single-info">
+                                                          <div class="info-icon">
+                                                              <i class="lni-map"></i>
+                                                          </div>
+                                                          <div class="info-content">
+                                                              <p>Arumbakkam</p>
+                                                          </div>
+                                                      </div> <!-- single info -->
+                                                  </li>
+                                              </ul>
+                                              <ul class="footer-social mt-20">
+                                                  <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                                  <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                                                  <li><a href="#"><i class="lni-google"></i></a></li>
+                                                  <li><a href="#"><i class="lni-instagram"></i></a></li>
+                                              </ul>
+                                          </div> <!-- footer logo -->
+                                      </div>
+                                      <div class="col-lg-3 col-md-4 col-sm-6">
+                                          <div class="footer-link mt-45">
+                                              <div class="f-title">
+                                                  <h4 class="title">Essential Links</h4>
+                                              </div>
+                                              <ul class="mt-15">
+                                                  <li><a href="#">About</a></li>
+                                                  <li><a href="#">Services</a></li>
+                                                  <li><a href="#">Contact Us</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 col-md-4 col-sm-6">
+                                          <div class="footer-link mt-45">
+                                              <div class="f-title">
+                                                  <h4 class="title">Services</h4>
+                                              </div>
+                                              <ul class="mt-15">
+                                                  <li><a href="#">HRO</a></li>
+                                                  <li><a href="#">Matrix</a></li>
+                                                  <li><a href="#">Chennai Detective Agent</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 col-md-5 col-sm-8">
+                                          <div class="footer-newsleter mt-45">
+                                              <div class="f-title">
+                                                  <h4 class="title">Newsleter</h4>
+                                              </div>
+                                              <p class="mt-15">Subscribe our channel</p>
+                                              <form action="#">
+                                                  <div class="newsleter mt-20">
+                                                      <input type="email" placeholder="info@contact.com">
+                                                      <button><i class="lni-angle-double-right"></i></button>
+                                                  </div>
+                                              </form>
+                                          </div>
+                                      </div>
+                                  </div> <!-- row -->
+                              </div> <!-- container -->
+                          </div> <!-- footer widget -->
+                          <div class="copyright-area">
+                              <div class="container">
+                                  <div class="row">
+                                      <div class="col-lg-12">
+                                          <div class="copyright text-center">
+                                           
+                                          </div> <!-- copyright -->
+                                      </div>
+                                  </div> <!-- row -->
+                              </div> <!-- container -->
+                          </div> <!-- copyright-area -->
+                      </footer>
+                  
+                      <!--====== FOOTER PART ENDS ======-->
+                
+                
+
+
+    <!--====== jquery js ======-->
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--====== WOW js ======-->
+    <script src="assets/js/wow.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!--====== Scrolling Nav js ======-->
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!--====== Aos js ======-->
+    <script src="assets/js/aos.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="assets/js/main.js"></script>
+    <script>
+
+
+        var _CONTENT = [ 
+        "Right to Education", 
+        "Right to Own Property", 
+        "Right to Equality", 
+        "Freedom from Slavery", 
+        "Freedom of Opinion and Information", 
+        "Substance Abuse Social Worker", 
+        "Health and Sanitation", 
+        "Development of Women and Children", 
+        "Empowerment Slum dwellers", 
+    
+       
+      
+      ];
+      
+      // Current sentence being processed
+      var _PART = 0;
+      
+      // Character number of the current sentence being processed 
+      var _PART_INDEX = 0;
+      
+      // Holds the handle returned from setInterval
+      var _INTERVAL_VAL;
+      
+      // Element that holds the text
+      var _ELEMENT = document.querySelector("#text");
+      
+      // Cursor element 
+      var _CURSOR = document.querySelector("#cursor");
+      
+      // Implements typing effect
+      function Type() { 
+        // Get substring with 1 characater added
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX++;
+      
+        // If full sentence has been displayed then start to delete the sentence after some time
+        if(text === _CONTENT[_PART]) {
+          // Hide the cursor
+          _CURSOR.style.display = 'none';
+      
+          clearInterval(_INTERVAL_VAL);
+          setTimeout(function() {
+            _INTERVAL_VAL = setInterval(Delete, 50);
+          }, 1000);
+        }
+      }
+      
+      // Implements deleting effect
+      function Delete() {
+        // Get substring with 1 characater deleted
+        var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+        _ELEMENT.innerHTML = text;
+        _PART_INDEX--;
+      
+        // If sentence has been deleted then start to display the next sentence
+        if(text === '') {
+          clearInterval(_INTERVAL_VAL);
+      
+          // If current sentence was last then display the first one, else move to the next
+          if(_PART == (_CONTENT.length - 1))
+            _PART = 0;
+          else
+            _PART++;
+          
+          _PART_INDEX = 0;
+      
+          // Start to display the next sentence after some time
+          setTimeout(function() {
+            _CURSOR.style.display = 'inline-block';
+            _INTERVAL_VAL = setInterval(Type, 100);
+          }, 200);
+        }
+      }
+      
+      // Start the typing effect on load
+      _INTERVAL_VAL = setInterval(Type, 100);
+      </script>
+    
+</body>
+
+</html>
